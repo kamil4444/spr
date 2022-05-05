@@ -55,8 +55,8 @@ d) docker inspect myapp  [Komentarz : W wynikach u dołu ekranu mamy, że są 4 
 # Architektury
 
 # Logujemy sie na dockera, konfigurujemy buildxa i budujemy dockerfile (jest tam gdzie jest terminal 
-# otwarty) okreslamy platformy oraz konto na dockerhubie
-#
+ otwarty) okreslamy platformy oraz konto na dockerhubie
+
 
 ![VirtualBox_PAwCO2022_05_05_2022_17_53_58](https://user-images.githubusercontent.com/103449118/166967302-888228d2-6d6a-41a8-8af5-6ea3f19fad72.png)
 
@@ -66,4 +66,3 @@ d) docker inspect myapp  [Komentarz : W wynikach u dołu ekranu mamy, że są 4 
 4. docker buildx build -t kamil4/spr:tag1 --platform linux/amd64,linux/arm64,linux/arm/v7 --push .
 
 
-![Untitled](https://user-images.githubusercontent.com/103449118/166967122-19098869-a1e8-4c83-a706-ebf458bbe109.png)
