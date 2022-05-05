@@ -57,9 +57,6 @@ d) docker inspect myapp  [Komentarz : W wynikach u dołu ekranu mamy, że są 4 
 # Logujemy sie na dockera, konfigurujemy buildxa i budujemy dockerfile (jest tam gdzie jest terminal 
  otwarty) okreslamy platformy oraz konto na dockerhubie
 
-
-![VirtualBox_PAwCO2022_05_05_2022_17_53_58](https://user-images.githubusercontent.com/103449118/166967302-888228d2-6d6a-41a8-8af5-6ea3f19fad72.png)
-
 1. docker login
 2. docker buildx create --name builder1
 3. docker buildx use builder1
