@@ -53,15 +53,15 @@ b) docker run -p 80:80 -d myapp
 c) -- NIe wiem jak to zrobić ale myślałem o docker history myapp, tylko ze nie wiem jak zapisac te wartosci do logow
 d) docker inspect myapp  [Komentarz : W wynikach u dołu ekranu mamy, że są 4 warstwy i wypisane ich sha256]
 
-
+![Untitled](https://user-images.githubusercontent.com/103449118/166967122-19098869-a1e8-4c83-a706-ebf458bbe109.png)
 
 # Architektury
 
 # Logujemy sie na dockera, konfigurujemy buildxa i budujemy dockerfile (jest tam gdzie jest terminal 
 # otwarty) okreslamy platformy oraz konto na dockerhubie
-#![Untitled](https://user-images.githubusercontent.com/103449118/166967122-19098869-a1e8-4c83-a706-ebf458bbe109.png)
+#
 
-![Untitled](https://user-images.githubusercontent.com/103449118/166967144-4730b399-5d7f-4246-8a38-71eba3b2b777.png)
+![VirtualBox_PAwCO2022_05_05_2022_17_53_58](https://user-images.githubusercontent.com/103449118/166967302-888228d2-6d6a-41a8-8af5-6ea3f19fad72.png)
 
 1. docker login
 2. docker buildx create --name builder1
