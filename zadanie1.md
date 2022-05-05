@@ -1,5 +1,9 @@
 # Kod Index.php
 
+# Zatrzymujemy czas w zmiennej $date, wyswietlamy port, date w formacie y-m-d h-i-s. Potem korzystamy 
+# z tablicy $_SERVER i pobieramy ip. KOlejnym krokiem jest przypisanie (wiem ze nie o to pytali ale nie # wiedzialem ja k to zrobic) do zmiennej $zone defaultowej przestrzeni czasowej i z pomoca funkcji 
+# date_create wyswietlamy czas w danej przestrzeni czasowej
+
 
 <!DOCTYPE html>
 <html>
@@ -19,7 +23,10 @@ echo "<br />" . date_format($date1, 'Y-m-d H:i:s') . "\n";
 
 
 
-# Kod dockerfile (dodajemy do alpine phpv7 i apache2 nastpenie podmieniamy pliki index.php i nadajemy mu uprawnienia, wystawiamy na sluchanie na port 80
+# Kod dockerfile 
+
+# (dodajemy do alpine phpv7 i apache2 nastpenie podmieniamy pliki index.php i nadajemy mu uprawnienia, 
+# wystawiamy na sluchanie na port 80
 
 FROM alpine:latest
 LABEL maintainer="Kamil Rytel"
@@ -45,7 +52,11 @@ d) docker inspect myapp  [Komentarz : W wynikach u dołu ekranu mamy, że są 4 
 
 
 
-# ARchitektury
+# Architektury
+
+# Logujemy sie na dockera, konfigurujemy buildxa i budujemy dockerfile (jest tam gdzie jest terminal 
+# otwarty) okreslamy platformy oraz konto na dockerhubie
+#
 
 1. docker login
 2. docker buildx create --name builder1
