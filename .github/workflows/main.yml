@@ -40,6 +40,6 @@ jobs:
           file: ./dockerfile.v1
           push: true
           tags: |
-            kamil4444/spr:zadanie2
+            kamil4/spr:zadanie2
           platforms: linux/amd64,linux/arm64,linux/arm/v7
     
