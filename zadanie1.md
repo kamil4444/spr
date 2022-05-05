@@ -47,17 +47,11 @@ CMD ["-D", "FOREGROUND"]
 
 
 # Polecenia [kontener o registry myapp]
-
+![Untitled](https://user-images.githubusercontent.com/103449118/166967122-19098869-a1e8-4c83-a706-ebf458bbe109.png)
 a) docker build -t myapp .
 b) docker run -p 80:80 -d myapp 
 c) -- NIe wiem jak to zrobić ale myślałem o docker history myapp, tylko ze nie wiem jak zapisac te wartosci do logow
 d) docker inspect myapp  [Komentarz : W wynikach u dołu ekranu mamy, że są 4 warstwy i wypisane ich sha256]
-
-
-
-
-
-![Untitled](https://user-images.githubusercontent.com/103449118/166967122-19098869-a1e8-4c83-a706-ebf458bbe109.png)
 
 # Architektury
 
