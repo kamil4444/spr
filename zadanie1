@@ -3,8 +3,7 @@
 
 # Kod Index.php
 
-# Zatrzymujemy czas w zmiennej $date, wyswietlamy port, date w formacie y-m-d h-i-s. Potem korzystamy z tablicy $_SERVER i pobieramy ip. KOlejnym krokiem jest przypisanie (wiem ze nie o to pytali ale nie # wiedzialem ja k to zrobic) do zmiennej $zone defaultowej przestrzeni czasowej i z pomoca funkcji 
-date_create wyswietlamy czas w danej przestrzeni czasowej
+# Zatrzymujemy czas w zmiennej $date, wyswietlamy port, date w formacie y-m-d h-i-s. Potem korzystamy z tablicy $_SERVER i pobieramy ip. KOlejnym krokiem jest przypisanie (wiem ze nie o to pytali ale nie # wiedzialem ja k to zrobic) do zmiennej $zone defaultowej przestrzeni czasowej i z pomoca funkcji  date_create wyswietlamy czas w danej przestrzeni czasowej
 
 
 <!DOCTYPE html>
