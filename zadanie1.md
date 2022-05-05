@@ -1,3 +1,6 @@
+# Architektury na dockerhub -->  kamil4/spr
+
+
 # Kod Index.php
 
 # Zatrzymujemy czas w zmiennej $date, wyswietlamy port, date w formacie y-m-d h-i-s. Potem korzystamy 
@@ -56,7 +59,9 @@ d) docker inspect myapp  [Komentarz : W wynikach u dołu ekranu mamy, że są 4 
 
 # Logujemy sie na dockera, konfigurujemy buildxa i budujemy dockerfile (jest tam gdzie jest terminal 
 # otwarty) okreslamy platformy oraz konto na dockerhubie
-#
+#![Untitled](https://user-images.githubusercontent.com/103449118/166967122-19098869-a1e8-4c83-a706-ebf458bbe109.png)
+
+![Untitled](https://user-images.githubusercontent.com/103449118/166967144-4730b399-5d7f-4246-8a38-71eba3b2b777.png)
 
 1. docker login
 2. docker buildx create --name builder1
