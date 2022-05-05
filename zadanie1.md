@@ -3,9 +3,8 @@
 
 # Kod Index.php
 
-# Zatrzymujemy czas w zmiennej $date, wyswietlamy port, date w formacie y-m-d h-i-s. Potem korzystamy 
-# z tablicy $_SERVER i pobieramy ip. KOlejnym krokiem jest przypisanie (wiem ze nie o to pytali ale nie # wiedzialem ja k to zrobic) do zmiennej $zone defaultowej przestrzeni czasowej i z pomoca funkcji 
-# date_create wyswietlamy czas w danej przestrzeni czasowej
+# Zatrzymujemy czas w zmiennej $date, wyswietlamy port, date w formacie y-m-d h-i-s. Potem korzystamy z tablicy $_SERVER i pobieramy ip. KOlejnym krokiem jest przypisanie (wiem ze nie o to pytali ale nie # wiedzialem ja k to zrobic) do zmiennej $zone defaultowej przestrzeni czasowej i z pomoca funkcji 
+date_create wyswietlamy czas w danej przestrzeni czasowej
 
 
 <!DOCTYPE html>
@@ -29,7 +28,7 @@ echo "<br />" . date_format($date1, 'Y-m-d H:i:s') . "\n";
 # Kod dockerfile 
 
 # (dodajemy do alpine phpv7 i apache2 nastpenie podmieniamy pliki index.php i nadajemy mu uprawnienia, 
-# wystawiamy na sluchanie na port 80
+wystawiamy na sluchanie na port 80
 
 FROM alpine:latest
 LABEL maintainer="Kamil Rytel"
@@ -47,7 +46,7 @@ CMD ["-D", "FOREGROUND"]
 
 
 # Polecenia [kontener o registry myapp]
-![Untitled](https://user-images.githubusercontent.com/103449118/166967122-19098869-a1e8-4c83-a706-ebf458bbe109.png)
+
 a) docker build -t myapp .
 b) docker run -p 80:80 -d myapp 
 c) -- NIe wiem jak to zrobić ale myślałem o docker history myapp, tylko ze nie wiem jak zapisac te wartosci do logow
@@ -65,3 +64,6 @@ d) docker inspect myapp  [Komentarz : W wynikach u dołu ekranu mamy, że są 4 
 2. docker buildx create --name builder1
 3. docker buildx use builder1
 4. docker buildx build -t kamil4/spr:tag1 --platform linux/amd64,linux/arm64,linux/arm/v7 --push .
+
+
+![Untitled](https://user-images.githubusercontent.com/103449118/166967122-19098869-a1e8-4c83-a706-ebf458bbe109.png)
